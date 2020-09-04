@@ -115,17 +115,15 @@ h1 {
 
   .ln-link {
     width: 1.5em;
+  }
 
+  .thumbnail:hover {
+    border-radius: 50%;
   }
 
   .menu :hover {
     text-decoration-line: line-through;
   }
-
-  .thumbnail:hover {
-    width:1.8em;
-    height:auto;
-}
 
 .art-gallery { 
     background: url(pictures/skomakeriet-samaneh-ext.png) no-repeat center center fixed; 

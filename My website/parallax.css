@@ -1,0 +1,85 @@
+html, body {
+    height: 100%;
+    margin:0;
+    font-family: Helvetica, sans-serif;
+}
+.header {
+    background-image: url(pictures/IMG_6399\ \(kopia\).jpg);
+}
+
+.gallery {
+    background-image: url(pictures/skomakeriet-samaneh-ext.png);
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+    color:black; 
+    font-family: "Helvetica";
+    font-size: 5em;
+    margin: auto;
+    width: 100%;
+    white-space: nowrap;
+    overflow: auto;
+    animation: type 3s steps(100, end);  
+  }
+
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+
+.title {
+    position: relative;
+    top: 20%;
+    margin: 0 0 0 10%;
+}
+
+.content-box {
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+    height: 800px;
+    background-color:black;
+    color: white;
+}
+
+.video {
+    position: relative;
+    width: 40%;
+    margin: auto;
+    top: 10%;
+    left: 50%;
+}
+p {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+  }
+
+.hi {
+    top: 20%;
+    left: 10%;
+}
+
+.do {
+    top: 25%;
+    left: 10%;
+}
+
+
+/* @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  } */
