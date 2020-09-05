@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin:0;
     font-family: Helvetica, sans-serif;
+    padding:0;
 }
 .header {
     background-image: url(pictures/IMG_6399\ \(kopia\).jpg);
@@ -22,18 +23,25 @@ html, body {
 
 h1 {
     color:black; 
-    font-family: "Helvetica";
     font-size: 5em;
     margin: auto;
     width: 100%;
     white-space: nowrap;
     overflow: auto;
-    animation: type 3s steps(100, end);  
+    opacity:0;
+
   }
 
-  @keyframes type{ 
-    from { width: 0; } 
-  } 
+.title-white {
+    color:white;
+    font-size: 2.5em;
+    width: 100%;
+    white-space: nowrap;
+    opacity:0;
+    position: relative;
+    top: 20%;
+    margin: 0 0 0 10%;
+}
 
 .title {
     position: relative;
@@ -41,10 +49,22 @@ h1 {
     margin: 0 0 0 10%;
 }
 
+.animation-visible {
+    opacity:1;
+    animation: type 3s steps(100, end);
+}
+
+
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+
+
+
 .content-box {
     font-family: Helvetica, sans-serif;
     font-size: 2em;
-    height: 800px;
+    height: 600px;
     background-color:black;
     color: white;
 }
@@ -57,9 +77,11 @@ h1 {
     left: 50%;
 }
 p {
+
+    font-size: 0.8em;
     position: relative;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+/*     padding: 1em; */
 }
 
 a {
@@ -73,9 +95,47 @@ a {
 }
 
 .do {
+    top: 20%;
+    left: 10%;
+}
+
+.study {
     top: 25%;
     left: 10%;
 }
+
+.running {
+    font-size: 1.5em;
+    top: 25%;
+    left: 10%;
+}
+
+
+.footer {
+    margin: auto;
+    padding: 10px;
+    text-align: center; 
+
+  }
+
+
+  
+  .email-link {
+
+    width: 1.7em;
+    height: 1.7em;
+    margin-right: 0.5em;
+  }
+
+.fb-link, .ig-link, .ln-link {
+    width: 1.5em;
+    margin-right: 0.5em;
+  }
+
+
+  .thumbnail:hover {
+    border-radius: 50%;
+  }
 
 
 /* @media only screen and (max-device-width: 1366px) {

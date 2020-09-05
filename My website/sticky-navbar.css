@@ -1,0 +1,54 @@
+<div class="navbar">
+<h2>anna lina maria roos</h2>
+<a href="#home">home</a>
+<a href="#contact">contact</a>
+</div>
+
+
+h2 {
+    float: left;
+    padding-left: 2%;
+
+}
+
+.navbar {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+    color:white;
+    background-color:black;
+    height: 2.5em;
+    width: 100%;
+  }
+
+ .padding-top {
+    padding-top: 4em;
+ }
+
+.navbar a {
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    float: right;
+    padding: 2%;
+    text-decoration: none;
+}
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  window.onscroll = function() {stickyFunction()};
+
+const navbar = document.querySelector('.navbar');
+
+const sticky = navbar.offsetTop;
+
+function stickyFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+}
