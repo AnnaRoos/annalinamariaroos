@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin:0;
     font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
     padding:0;
 }
 .header {
@@ -51,12 +52,13 @@ h1 {
 
 .animation-visible {
     opacity:1;
-    animation: type 3s steps(100, end);
+    animation: type 2s steps(100, end);
 }
 
 
   @keyframes type{ 
     from { width: 0; } 
+    to { width: 10em; }
   } 
 
 
@@ -118,10 +120,8 @@ a {
 
   }
 
-
   
   .email-link {
-
     width: 1.7em;
     height: 1.7em;
     margin-right: 0.5em;
