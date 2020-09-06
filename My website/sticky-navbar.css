@@ -1,3 +1,5 @@
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+
 <div class="navbar">
 <h2>anna lina maria roos</h2>
 <a href="#home">home</a>
@@ -52,3 +54,4 @@ function stickyFunction() {
         navbar.classList.remove('sticky');
     }
 }
+

@@ -19,3 +19,14 @@ targets.forEach(target => {
     observer.observe(target);
 });
 
+const twinkle = document.getElementById('twinkle');
+
+function unmute() {
+    if(twinkle.muted) {
+        twinkle.muted = false;
+    } else {
+        twinkle.muted = true;
+    }
+}
+
+twinkle.addEventListener('click', unmute);
