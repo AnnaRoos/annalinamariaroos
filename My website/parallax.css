@@ -17,6 +17,11 @@ html, body {
     background-image: url(pictures/skomakeriet-samaneh-ext.png);
 }
 
+.articles {
+  background-image: url(pictures/klick-medley.png);
+
+}
+
 .parallax {
     height: 100%;
     background-attachment: fixed;
@@ -47,7 +52,8 @@ h1 {
     text-align: left;
     grid-column-start: 1;
     grid-column-end: 3;
-    align-self: center;
+    grid-row-start: 2;
+    align-self: start;
 }
 
 .title {
@@ -66,7 +72,18 @@ h1 {
     from { width: 0; } 
   } 
 
+  .title-pink {
+    color:magenta;
+    position: relative;
+    top: 20%;
+    margin: 0 0 0 10%;
+}
 
+mark {
+  padding: 0 2% 0 2%;
+  color: magenta;
+  background-color: black;
+}
 
 .content-box {
   display: grid;
@@ -74,7 +91,7 @@ h1 {
   grid-template-rows: 1fr 1fr 1fr;
   font-family: Helvetica, sans-serif;
   font-size: 2em;
-  height: 600px;
+  height: 500px;
   width: 100%;
   background-color:black;
   color: white;
@@ -111,8 +128,17 @@ text-decoration: none;
 
 .hi {
 grid-row-start: 2;
-margin: 0 10% 0 20%;
-align-self: start;
+margin: 5% 10% 0 20%;
+align-self: center;
+}
+
+.unmute {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  margin: 20% 0 0 20%;
+  align-self: center;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 .do {
@@ -123,8 +149,8 @@ align-self: center;
 
 .study {
 grid-row-start: 2;
-margin: 0 10% 0 20%;
-align-self: start;
+margin: 10% 10% 0 20%;
+align-self: center;
 }
 
 .before {
@@ -134,7 +160,7 @@ align-self: center;
 }
 
 .running {
-font-size: 1.2rem;
+font-size: 1.3rem;
 top: 22%;
 position: relative;
 left: 10%;
@@ -157,7 +183,7 @@ height: 1.7em;
 margin-right: 0.5em;
 }
 
-.fb-link, .ig-link, .ln-link {
+.fb-link, .ig-link, .ln-link, .gh-link {
 width: 1.5em;
 margin-right: 0.5em;
 }
@@ -168,7 +194,16 @@ border-radius: 50%;
 }
 
 
+
+
+/* FOR MOBILE */
+
 @media only screen and (max-width: 768px) {
+
+.content-box {
+height: 400px;
+}
+
 .video {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -176,7 +211,7 @@ border-radius: 50%;
 }
 
 .mobile {
-  display: block;
+  display: inline-block;
 }
 
 .desktop {
@@ -185,19 +220,26 @@ border-radius: 50%;
 
 p {
   grid-column-end: 3;
-  font-size: 0.6em;
+  font-size: 0.8rem;
 }
 
 .do, .before {
-margin: 0 10% 0 10%;
-align-self: center;
+margin: 0 10% 5% 10%;
+align-self: end;
 }
 
 .hi {
   grid-row-start: 1;
-  grid-column-end: 3;
+  grid-column-start: 1;
   margin: 0 10% 2% 10%;
   align-self: end;
+}
+
+.unmute {
+  grid-row-start: 3;
+  margin: 2% 0 0 10%;
+  font-size: 0.6rem;
+  align-self: start;
 }
 
 .study {
@@ -208,7 +250,7 @@ align-self: center;
 }
 
 .running {
-  font-size: 1.3em;
+  font-size: 0.8rem;
 }
 
 .title-white {
@@ -229,9 +271,24 @@ h1 {
 }
 
 
+/* TABLET ONLY */
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .content-box {
+      height: 600px;
+      }
+
+}
+
 
 /* @media only screen and (max-device-width: 1366px) {
     .parallax {
       background-attachment: scroll;
     }
   } */
+  
