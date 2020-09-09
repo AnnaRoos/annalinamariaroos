@@ -18,8 +18,7 @@ html, body {
 }
 
 .articles {
-  background-image: url(pictures/klick-medley.png);
-
+  background-image: url(pictures/klick-sofis-medley/klick-sofis-medley.001.jpeg);
 }
 
 .parallax {
@@ -62,6 +61,11 @@ h1 {
     margin: 0 0 0 10%;
 }
 
+/* .link-decoration:hover {
+text-decoration: line-through;
+} */
+
+
 .animation-visible {
     opacity:1;
     animation: type 2s steps(100, end);
@@ -73,16 +77,27 @@ h1 {
   } 
 
   .title-pink {
-    color:magenta;
+    color:black;
     position: relative;
     top: 20%;
     margin: 0 0 0 10%;
+    font-size: 5rem;
+    white-space: nowrap;
+    text-align: left;
+/*     grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    align-self: center; */
 }
 
 mark {
-  padding: 0 2% 0 2%;
-  color: magenta;
-  background-color: black;
+  padding: 0 10px 0 10px;
+  color: black;
+  background-color: rgb(248, 60, 204);
+}
+
+.more-space {
+  padding: 0.4% 0.4% 0.4% 0.4%;
 }
 
 .content-box {
@@ -97,6 +112,12 @@ mark {
   color: white;
 }
 
+/* .grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+} */
+
 .video {
   position: relative;
   grid-column-start: 2;
@@ -106,8 +127,22 @@ mark {
   grid-column-end: 3;
   grid-row-end: 3;
   align-self: center;
-  
 }
+
+#mute-btn {
+  position: relative;
+  bottom: 3%;
+  left: 3%;
+  z-index: 999;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-column-end: 3;
+  grid-row-end: 3;
+  width: 1.7rem;
+  align-self: end;
+}
+
+
 
 .mobile {
   display: none;
@@ -168,6 +203,15 @@ text-align: left;
 margin-right: 20%;
 }
 
+.reporter {
+font-size: 1.3rem;
+top: 22%;
+position: relative;
+text-align: left;
+left: 10%;
+margin-right: 20%;
+}
+
 
 .footer {
 margin: auto;
@@ -192,8 +236,6 @@ margin-right: 0.5em;
 .thumbnail:hover {
 border-radius: 50%;
 }
-
-
 
 
 /* FOR MOBILE */
@@ -253,6 +295,10 @@ align-self: end;
   font-size: 0.8rem;
 }
 
+.reporter {
+  font-size: 0.8rem;
+}
+
 .title-white {
 font-size: 3rem;
 grid-row-start: 1;
@@ -260,9 +306,15 @@ align-self: start;
 margin: 5% 0 0 10%;
 }
 
+.title-pink {
+  font-size: 3rem;
+}
+
 h1 {
   font-size: 3rem;
 }
+
+
 
 .header {
   background-image: url(pictures/IMG_6399.JPG);
@@ -292,3 +344,4 @@ h1 {
     }
   } */
   
+
