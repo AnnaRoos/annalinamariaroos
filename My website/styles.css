@@ -101,7 +101,7 @@ mark {
 .content-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
   font-family: Helvetica, sans-serif;
 /*   gap: 1rem; */
   font-size: 2em;
@@ -120,8 +120,8 @@ mark {
 .video {
   position: relative;
   grid-column: 2 / 3;
-  height: 100%;
-  max-width: 70%;
+  /* height: 100%; */
+  width: 70%;
 
   grid-row-start: 2;
   align-self: center;
@@ -224,6 +224,10 @@ margin-right: 0.5em;
 border-radius: 50%;
 }
 
+.small-mobile {
+  display: none;
+}
+
 
 /* FOR MOBILE */
 
@@ -236,14 +240,14 @@ height: 60vh;
 
 #mute-btn {
   position: relative;
-  bottom: 7%;
+  bottom: 5%;
   left: 30%;
   z-index: 999;
   grid-column-start: 1;
   grid-row-start: 2;
   grid-column-end: 2;
   grid-row-end: 3;
-  width: 1.5rem;
+  width: 1rem;
   align-self: end;
 }
 
@@ -266,7 +270,6 @@ align-self: end;
 }
 
 .hi {
-  grid-row-start: 1;
   grid-column-start: 1;
   margin: 0 10% 2% 10%;
   align-self: end;
@@ -280,8 +283,6 @@ align-self: end;
 }
 
 .study {
-  grid-row-start: 1;
-  grid-column-end: 3;
   margin: 0 10% 2% 10%;
   align-self: end;
 }
@@ -309,8 +310,6 @@ h1 {
   font-size: 3rem;
 }
 
-
-
 .header {
   background-image: url(images/IMG_6399.JPG);
 }
@@ -336,25 +335,31 @@ h1 {
   }
 
   .study {
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-column-end: 2;
-    margin: 0 10% 2% 20%;
-    align-self: end;
+    margin: 0 0 0 20%;
   }
+
+  .title-white {
+    grid-row-start: 2;
+    align-self: start;
+    margin: 0 0 0 10%;
+    }
+
 
   #mute-btn {
     position: relative;
-    bottom: 7%;
     left: 5%;
     z-index: 999;
     grid-column-start: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    width: 1.5rem;
     align-self: end;
   }
 
-
+.tablet {
+  display: inline-block;
+}
 } 
 
 @media only screen 
@@ -365,8 +370,22 @@ and (-webkit-min-device-pixel-ratio: 1) {
   margin: 0 0 0 10%;
   grid-column: 1 / 3;
 }
+
+.hi {
+  grid-row-start: 1;
 }
 
+.study {
+  grid-row-start: 1;
+  grid-column-end: 3;
+}
+.small-mobile {
+  display: inline-block;
+}
+.tablet {
+  display: none;
+}
+}
 
 /*  @media only screen and (max-device-width: 1366px) {
     .parallax {
