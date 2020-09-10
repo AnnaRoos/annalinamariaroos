@@ -4,23 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="parallax.css" rel="stylesheet" type="text/css">
-        <script src="parallax.js" defer></script>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <script src="app.js" defer></script>
         <title>Anna Lina Maria Roos</title>
     </head>
     <body>
-        <div class="parallax header">
+        <header class="parallax header">
             <h1 class="show-on-scroll title desktop">anna lina maria roos</h1>
             <h1 class="show-on-scroll title mobile">anna <br>lina <br>maria <br>roos</h1>
-        </div>
+        </header>
         
-        <div class="content-box">
+        <div id="content-box" class="content-box">
             <h1 class="show-on-scroll title-white animation-visible">hi!</h1>
             <p class="hi">I'm Anna. I used to do that. &#8593; <br>
                 Now I mostly listen to this. <span class="mobile">&#8595;</span>
                 <span class="desktop">&#8594;</span> <br></p>
                <!--  <p class="unmute">(Click to unmute!)</p> -->
-                <img id="mute-btn" src="icons/iconmonstr-audio-9-240.png" alt="">
+                <img id="mute-btn" src="icons/iconmonstr-audio-9-240.png" alt="mute button">
             <video id="twinkle" class="video" playsinline autoplay loop muted>
                 <source src="videos/IMG_2682.mov" type="video/mp4" title="kid playing keyboard">
             </video>
@@ -32,7 +32,7 @@
             <p class="running">Running contemporary art gallery skomakeriet together with Richard Roos.</p>
         </div>
 
-        <div class="content-box">
+        <div id="content-box" class="content-box">
             <h1 class="show-on-scroll title-white animation-visible">projects</h1>
             <p class="study">Studying to become a front end developer. Portfolio coming up. 
                 <span class="mobile">&#8595;</span><span class="desktop">&#8594;</span></p>
@@ -56,6 +56,6 @@
                 <img src="icons/iconmonstr-linkedin-2-240.png" alt="linkedin link" class="ln-link thumbnail"></a>
                <!--  <a href="">
                     <img src="icons/iconmonstr-github-2-240.png" alt="github link" class="gh-link thumbnail"></a> -->
-            </footer>
+        </footer>
     </body>
 </html>
